@@ -36,6 +36,11 @@ body {
 .mt-2 {
   margin-top: 1.5em;
 }
+.centrado {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 .countdown-title {
   text-align: center;
   padding-top: 0px;
@@ -71,6 +76,42 @@ body {
   padding: 0 4px;
 }
 
+/* add to calendar */
+.ace_dd {
+  display: none;
+  /* border: 1px solid #aaa; */
+  position: absolute;
+  background: transparent;
+  z-index: 1000;
+}
+a.ace_opt {
+  padding: 10px 11px;
+  display: block;
+  text-decoration: none;
+  text-align: left;
+  cursor: pointer;
+  color: #887459;
+}
+a.ace_opt:hover {
+  background-color: #f0f0f0;
+  color: #887459;
+  text-decoration: none;
+}
+.btn {
+  border: 2px solid #887459;
+  background-color: transparent;
+  padding: 10px 10px;
+  font-size: 14px;
+  cursor: pointer;
+  color: #887459;
+}
+.btn:hover {
+  background-color: #887459;
+  color: white;
+}
+/* /add to calendar */
+
+/* heart animation */
 .heart {
   position: absolute;
   top: 50%;
@@ -82,7 +123,6 @@ body {
   height: 22px;
   width: 22px;
 }
-
 .animate-topright {
   position: absolute;
   -webkit-animation: movetopRight 6.5s 1s infinite;
@@ -91,7 +131,6 @@ body {
   -ms-animation: movetopRight 6.5s 1s infinite;
   animation: movetopRight 6.5s 1s infinite;
 }
-
 .animate-bottomright {
   position: absolute;
   -webkit-animation: movebottomRight 4.5s 1.7s infinite;
@@ -100,7 +139,6 @@ body {
   -ms-animation: movebottomRight 4.5s 1.7s infinite;
   animation: movebottomRight 4.5s 1.7s infinite;
 }
-
 .animate-topleft {
   position: absolute;
   -webkit-animation: movetopLeft 8.5s 5.4s infinite;
@@ -109,7 +147,6 @@ body {
   -ms-animation: movetopLeft 8.5s 5.4s infinite;
   animation: movetopLeft 8.5s 5.4s infinite;
 }
-
 .animate-bottomleft {
   position: absolute;
   -webkit-animation: movebottomLeft 7.5s 4.8s infinite;
@@ -118,7 +155,6 @@ body {
   -ms-animation: movebottomLeft 7.5s 4.8s infinite;
   animation: movebottomLeft 7.5s 4.8s infinite;
 }
-
 .animate-up {
   position: absolute;
   -webkit-animation: moveup 7.5s 2.2s infinite;
@@ -127,7 +163,6 @@ body {
   -ms-animation: moveup 7.5s 2.2s infinite;
   animation: moveup 7.5s 2.2s infinite;
 }
-
 .animate-down {
   position: absolute;
   -webkit-animation: movedown 5.5s 5.5s infinite;
@@ -136,7 +171,6 @@ body {
   -ms-animation: movedown 5.5s 5.5s infinite;
   animation: movedown 5.5s 5.5s infinite;
 }
-
 .animate-left {
   position: absolute;
   -webkit-animation: moveleft 5.5s 2.9s infinite;
@@ -145,7 +179,6 @@ body {
   -ms-animation: moveleft 5.5s 2.9s infinite;
   animation: moveleft 5.5s 2.9s infinite;
 }
-
 .animate-right {
   position: absolute;
   -webkit-animation: moveright 5.5s 3.4s infinite;
@@ -154,7 +187,6 @@ body {
   -ms-animation: moveright 5.5s 3.4s infinite;
   animation: moveright 5.5s 3.4s infinite;
 }
-
 @keyframes movetopRight {
   0% {
     top: 50%;
@@ -251,3 +283,4 @@ body {
     opacity: 0;
   }
 }
+/* /heart animation */

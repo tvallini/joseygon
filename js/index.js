@@ -39,3 +39,19 @@ function initializeClock(id, endtime) {
 
 const deadline = 'December 11 2021 18:00:00 GMT-0300';
 initializeClock('clockdiv', deadline);
+
+$(".ace_btn").addcalevent({
+  'data': {
+    "title":"Jose & Gonza",
+    "desc":"Nos casamos ♥", 
+    "location": "Estancia El Recuerdo, Agote, Buenos Aires Province",
+    "url": "https://www.joseygonza.com.ar",		
+    "time":{
+      "start":"December 11, 2021 18:00:00",
+      "end":"December 12, 2021 12:00:00",
+      "zone":"-03:00"
+    },
+  },
+  'vcalEnabled':true,
+  'ics': "../joseygon.ics"
+});
